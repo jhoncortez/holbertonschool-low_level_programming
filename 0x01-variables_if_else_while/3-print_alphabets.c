@@ -10,7 +10,7 @@ int main(void)
 	char c;
 	int count;
 
-	count=1;
+	count = 1;
 	while (count <= 2)
 	{
 		c = 'a';
