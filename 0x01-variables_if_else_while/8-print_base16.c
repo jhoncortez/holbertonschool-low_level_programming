@@ -8,14 +8,14 @@ int main(void)
 {
 	long int n = 0;
 	char c;
-	int crunner=0;
+	int crunner = 0;
 
-	c='a';
+	c = 'a';
 	while (n < 16)
 	{
 		if (n >= 10)
 		{
-			putchar(c+crunner);
+			putchar(c + crunner);
 			crunner++;
 		}
 		else
