@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <ctype.h>
 /**
  * main - Entry point
  *
@@ -7,27 +6,19 @@
  */
 int main(void)
 {
-	char c;
-	int count;
+	char c, uc;
 
-	count = 1;
-	while (count <= 2)
+	c = 'a';
+	uc = 'A';
+	while (c <= 'z')
 	{
-		c = 'a';
-		while (c <= 'z')
-		{
-			if (count == 2)
-			{
-				putchar(toupper(c));
-			}
-			else
-			{
-				putchar(c);
-			}
-			if (c == 'z')
-				count++;
-			c++;
-		}
+		putchar(c);
+		c++;
+	}
+	while (uc <= 'Z')
+	{
+		putchar(uc);
+		uc++;
 	}
 	putchar ('\n');
 	return (0);
